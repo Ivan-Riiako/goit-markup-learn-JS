@@ -1,0 +1,308 @@
+.header{
+    position: relative;
+}
+
+.head-border {
+border-bottom: 1px solid var(--nav-line);
+}
+
+/* --------------NAVIGATION  --------------*/
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu-container {
+    //   Repela-style mobile-menu 
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+//     z-index: 10;
+//     @media screen and (max-width: 767px) {
+//     display: none;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     position: absolute;
+//     // top: 100%;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: auto;
+
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     padding-bottom: 48px;
+//     padding-top: 48px;
+
+//     background: #FFFFFF;
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+//     // &.is-open {
+//     //  opacity: 1;
+//     // visibility:visible;
+//     // pointer-events:painted;
+//     //     display: flex;
+
+//         @media screen and (min-width: 480px) {
+//             padding-left: 40px;
+//             padding-right: 40px;
+//         }
+//     }
+// }
+@media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+}
+
+
+// .btn-mobile-menu {
+//   Repela-style mobile-menu 
+//     z-index: 11;
+//     position: relative;
+//     margin-left: auto;
+//     margin-bottom: 10px;
+//     margin-top: 10px;
+//     line-height: 0;
+
+    
+//     width: 40px;
+//     height: 40px;
+    
+//     background-color: transparent;
+//     border: none;
+
+//     &.is-open &__icon-menu-close{
+//         display: block;
+//     }
+//     & &__icon-menu-close{
+//     display: none;
+//     }
+//     &.is-open &__icon-menu {
+//             display: none;
+//     }
+//     & &__icon-menu {
+//         display: block;
+//     }
+
+//     &__icons {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//     }
+
+//     &:hover,
+//     &:focus {
+//         fill: var(--link-active);
+//     }
+
+//     @media screen and (min-width:768px) {
+//     display: none;
+//        }
+// }
+
+
+.navigation__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin-left: 93px;
+
+        &>.navigation__li {
+            margin-left: 50px;
+        }
+
+        &>.navigation__li:first-child {
+            margin-left: 0;
+        }
+    }
+}
+
+.navigation__element {
+    display: block;
+    //   Repela-style mobile-menu 
+    // @include font-medium(40px, 47px, 0.02em);
+
+    padding-bottom: 32px;
+    color: var(--nav-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+    @include font-medium(14px, 1.14, 0.02em); 
+        padding-top: 32px;
+        
+    }  
+    &:focus,
+    &:hover {
+        color: var(--link-active);
+    }
+}
+
+// ======== Current ========//
+.navigation__current {
+color: var(--link-active);
+
+@media screen and (min-width: 768px) {
+    color: var(--link-active);
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: var(--link-active);
+            border-radius: 2px;
+        }
+    }
+
+}
+
+/* --------------CONTACTS --------------*/
+.contacts {
+    //   Repela-style mobile-menu 
+    // margin-top: auto;
+@media screen and (min-width: 768px) {
+    margin-top:0;
+    margin-left: auto;
+    display: flex;
+    
+    flex-direction: column-reverse;
+}
+@media screen and (min-width: 1200px) {
+flex-direction: row-reverse;
+align-items: center;
+}
+
+
+ &__li {
+    //   Repela-style mobile-menu 
+    //  margin-bottom: 32px;
+
+     @media screen and (min-width: 768px) {
+         margin-bottom: 0;
+     }
+ }
+
+
+&__contact-tell {
+    //   Repela-style mobile-menu 
+    // @include font-medium(34px, 40px, 0.02em);
+    color: var(--link-active);
+
+        @media screen and (min-width: 768px) {
+    @include aligm(flex, start, center);
+    @include font-medium(14px, 1.14, 0.02em);
+    color: var(--contacts-color);
+    fill: var(--contacts-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--link-active);
+            fill: var(--link-active);
+        }
+    }
+}
+
+
+&__contact-maill{
+    //   Repela-style mobile-menu 
+    // @include font-medium(24px, 28px, 0.02em);
+    color: var(--contacts-color);
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    @include aligm(flex, center, center);
+    fill: var(--contacts-color);
+    @include font-medium(14px, 1.14, 0.02em);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+        
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+        &:hover,
+        &:focus {
+            color: var(--link-active);
+            fill: var(--link-active);
+        }
+}
+
+}
+
+
+.contacts__icon-maill,
+.contacts__icon-tell {
+    fill: inherit;
+//   Repela-style mobile-menu 
+    // @media screen and (max-width: 767px) {
+    // display: none;
+    // }
+
+    @media screen and (min-width: 768px) {
+    margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    }
+
+}
+//  //   Repela-style mobile-menu 
+
+.menu-container__social-links-list{
+    //   Repela-style mobile-menu   
+     display: none;
+        
+//     display: flex;
+//     flex-wrap: wrap;
+// margin-top: auto;
+//     align-items: flex-end;
+// }
+// .menu-container__social-link-item{
+//     position: relative;
+//     &:not(:last-child){
+//       margin-right: 20px;
+//     }
+
+    
+//     &:not(:last-child)::after {
+//     content: "";
+//     position: absolute;
+//     height: 100%;
+
+//     top: 0;
+//     right: -10px;
+//     display: block;
+
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     // transform: rotate(90deg);
+   
+//     }
+//          @media screen and (min-width: 768px) {
+//              display: none;
+//          }
+// }
+// .menu-container__social-link{
+//     text-decoration: none;
+//     font-weight: 500;
+//         font-size: 18px;
+//         line-height: 22px;
+//         /* identical to box height, or 122% */
+    
+//         letter-spacing: 0.02em;
+    
+//         color: #2196F3;
+}

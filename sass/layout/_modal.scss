@@ -1,0 +1,204 @@
+.modal {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+width: calc(100vw - 30px);
+max-height: calc(100vh - 30px);
+
+padding: 20px;
+overflow-y: scroll;
+
+background-color: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+transition: transform 250ms linear;
+
+@media screen and (min-width: 480px) {
+    padding: 40px;
+width: 450px;
+
+}
+@media screen and (min-width: 1200px) {
+width: 528px;
+
+}
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+}
+
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        fill: var(--link-active)
+    }
+}
+
+.form-header {
+    display: block;
+    margin-bottom: 12px;
+
+    @include font-bold(20px, 30px, 0.03em);
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+    @include font-bold(20px, 23px, 0.03em);
+    }
+}
+
+.label {
+    display: block;
+    margin-bottom: 4px;
+@include font-normal(12px, 14px, 0.01em);
+    color: #757575;
+}
+
+.wraper-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.icon-field {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background-size: cover;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
+
+    .field:hover + &,
+    .field:focus + & {
+        fill: var(--link-active);
+    }
+}
+
+.field {
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    padding-right: 12px;
+
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        }
+}
+
+.textarea {
+    display: block;
+    margin-bottom: 0;
+    resize: none;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &::placeholder {
+        @include font-normal(14px, 16px, 0.01em);
+        color: rgba(117, 117, 117, 0.5);
+        @media screen and (min-width: 1200px) {
+                @include font-normal(12px, 14px, 0.01em);
+            }
+    }
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    
+    @include font-normal(12px, 14px, 0.03em); 
+    color: #757575;
+
+    @media screen and (min-width: 1200px) {
+            @include font-normal(14px, 24px, 0.03em);
+        }
+
+    &::before {
+        content: "";
+        display: block;
+        
+        min-height: 15px;
+        min-width: 16px;
+        margin-right: 7px;
+        border-radius: 2px;
+        border: 2px solid #000000;
+        cursor: pointer;
+    
+        background-image: url(../images/checkbox.svg);
+        background-repeat: no-repeat;
+        background-size: content;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .imput-checkbox:checked + &::before {
+        background-color: var(--link-active);
+        border: 2px solid var(--link-active);
+    
+    }
+    
+    .imput-checkbox:focus + &::before {
+        border: 2px solid var(--link-active);
+    }
+      
+    &__link {
+        text-decoration-line: underline;
+    
+        color: #2196F3;
+    }
+}
+
+.modal__submit {
+    @extend %button;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 52px;
+    padding-right: 52px
+}

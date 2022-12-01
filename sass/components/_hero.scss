@@ -1,0 +1,84 @@
+.hero-section {
+margin-left: auto;
+margin-right: auto;
+max-width: 768px;
+
+padding-top: 118px;
+padding-bottom: 118px;
+text-align: center;
+
+background-size: cover;
+background-color: #AFB1B8;
+background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.webp);
+background-position: center;
+background-repeat: no-repeat;
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.webp);
+}
+
+@media screen and (min-width: 768px){
+max-width: 1200px;
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.webp);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.webp);
+}
+
+}
+@media screen and (min-width: 1200px) {
+max-width: 1600px;
+background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-deckstop.webp);
+padding-top: 200px;
+padding-bottom: 200px;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-deckstop@2x.webp);
+    }
+}
+}
+
+.hero-section__heading {
+
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.62;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+text-align: center;
+    
+color: var(--h-hero-color);
+
+
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+@media screen and(min-width: 480px){
+width: 360px;
+}
+
+@media screen and(min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+}
+}
+
+.hero-section__button {
+@extend %button;
+
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 24px;
+padding-right: 24px;
+@media screen and(min-width: 1200px) {
+padding-left: 32px;
+    padding-right: 32px;
+}
+}

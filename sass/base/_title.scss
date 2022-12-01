@@ -1,0 +1,14 @@
+.title {
+    font-family: 'Roboto';
+    @include font-bold(28px, 33px, 0.03em);
+    text-align: center;
+    color: var(--h-what-color);
+
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px){
+    @include font-bold(36px, 42px, 0.03em);
+    margin-bottom: 50px;
+    }
+}
