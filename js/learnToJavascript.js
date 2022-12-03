@@ -122,25 +122,27 @@ document.querySelector('.hero-section').style.backgroundColor = colorSection;
 
 // Script покупка с дисконтом
 
-const totalSpent = 1000;
-let payment = 500;
-let discount = 0;
+// let totalSpent = 2000;
+// let payment = 500;
+// let discount = 0;
 
-if (100 <= totalSpent && 1000 > totalSpent) {
-  discount += 0.02;
-  console.log(`Поздравляем, бронзовый партнер, ваша скидка ${discount * 100}%`);
+// if (100 <= totalSpent && 1000 > totalSpent) {
+//   discount += 0.02;
+//   console.log(`Поздравляем, бронзовый партнер, ваша скидка ${discount * 100}%`);
 
-} else if (1000 <= totalSpent && 5000 >= totalSpent) {
-  discount += 0.05;
-  console.log(`Поздравляем, серебрянный партнер, ваша скидка ${discount * 100}%`);
+// } else if (1000 <= totalSpent && 5000 >= totalSpent) {
+//   discount += 0.05;
+//   console.log(`Поздравляем, серебрянный партнер, ваша скидка ${discount * 100}%`);
 
-} else if (5000 < totalSpent) {
-  discount += 0.1;
-  console.log(`Поздравляем, золотой партнер, ваша скидка ${discount * 100}%`);
+// } else if (5000 < totalSpent) {
+//   discount += 0.1;
+//   console.log(`Поздравляем, золотой партнер, ваша скидка ${discount * 100}%`);
 
-} else {
-  console.log("Не партнер , скидка 0%");
-}
-  payment -= payment * discount;
+// } else {
+//   console.log("Не партнер , скидка 0%");
+// }
+//   payment -= payment * discount;
 
-console.log(`Заказ на суму ${payment} со скидкой ${discount * 100}% оформлен`);
+// console.log(`Заказ на суму ${payment} со скидкой ${discount * 100}% оформлен`);
+// totalSpent += payment;
+// console.log (`Общая сума потраченного в магазине: ${totalSpent}`);
