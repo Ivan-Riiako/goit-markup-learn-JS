@@ -38,6 +38,11 @@ const colorSection = colors[index - 1];
 // console.log(`Namber of colors : ${index - 1}`);
 document.querySelector('.hero-section').style.backgroundColor = colorSection;
 
+
+
+
+
+
 // задача с курьером
 // let option = 0;
 // let alertMessage = '';
@@ -146,3 +151,5 @@ document.querySelector('.hero-section').style.backgroundColor = colorSection;
 // console.log(`Заказ на суму ${payment} со скидкой ${discount * 100}% оформлен`);
 // totalSpent += payment;
 // console.log (`Общая сума потраченного в магазине: ${totalSpent}`);
+
+
