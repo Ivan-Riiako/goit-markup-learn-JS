@@ -38,6 +38,8 @@ const colorSection = colors[index - 1];
 // console.log(`Namber of colors : ${index - 1}`);
 document.querySelector('.hero-section').style.backgroundColor = colorSection;
 
+
+// counter
 const buttonCountAdd = document.querySelector('.add');
 const buttonCountReset = document.querySelector('.reset');
 const inputCount = document.querySelector('.counter__input');

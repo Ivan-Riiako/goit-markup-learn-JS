@@ -401,17 +401,10 @@ summary {
 }
 
 .section {
-  width: 100%;
   height: 100vh;
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -431,6 +424,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: var(--bg-body-color);
   background-size: 100%;
+  height: 100vh;
 }
 
 img {
@@ -457,32 +451,16 @@ a {
 }
 
 .hero-section {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 768px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding: 20px;
   text-align: center;
-  background-size: cover;
   background-color: #AFB1B8;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-position: center;
-  background-repeat: no-repeat;
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero-section {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
@@ -526,7 +504,19 @@ a {
 }
 
 .counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.counter__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -536,9 +526,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 25px;
 }
 .counter .add {
-  border-radius: 25px;
+  border-radius: 45px;
   margin: 0;
   margin-right: 15px;
   color: #ffffff;
@@ -558,12 +549,16 @@ a {
   background-color: rgb(187, 34, 129);
 }
 .counter__input {
+  font-size: 17px;
+  color: #ffffff;
+  background-color: rgba(236, 198, 198, 0.4);
+  padding-left: 40px;
   height: 50px;
   border: none;
   outline: none;
   border-radius: 25px;
-  margin-right: 15px;
-  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .output {
