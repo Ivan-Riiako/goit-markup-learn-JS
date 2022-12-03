@@ -80,7 +80,7 @@ padding-left: 32px;
         margin: 0;
         margin-right: 15px;
         color: #ffffff;
-        background: rgb(71, 132, 229);
+        background: rgba(71, 132, 229, 0.764);
         &:hover {
         background-color: rgb(52, 78, 130);
         }
@@ -96,7 +96,7 @@ padding-left: 32px;
         }
     }
 
-    &>input{
+    &__input{
 height: 50px;
 border: none;
 outline: none;
@@ -104,4 +104,12 @@ border-radius: 25px;
 margin-right: 15px;
 padding-left: 20px;
     }
+}
+.output{
+    display: inline-block;
+   
+    padding: 23px;
+    
+    width: auto;
+    background-color: #61ea7a;
 }

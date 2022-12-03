@@ -38,6 +38,34 @@ const colorSection = colors[index - 1];
 // console.log(`Namber of colors : ${index - 1}`);
 document.querySelector('.hero-section').style.backgroundColor = colorSection;
 
+const buttonCountAdd = document.querySelector('.add');
+const buttonCountReset = document.querySelector('.reset');
+const inputCount = document.querySelector('.counter__input');
+const output = document.querySelector('.js-output');
+
+
+let total = 0;
+ // Слушатель события
+buttonCountAdd.addEventListener('click', function () {
+  let value = Number(inputCount.value);  
+  // Sum 
+  total += value;
+  // Clean input
+  inputCount.value = '';
+  // write total to output
+  output.textContent = total;
+  console.log(`total:  ${total}`);
+  }
+);
+  // Clean the output
+buttonCountReset.addEventListener('click', function () {
+  total = 0;
+  output.textContent = total;
+  
+})
+  
+
+
 
 
 
