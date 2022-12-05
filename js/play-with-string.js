@@ -1,6 +1,24 @@
 
-const fontSize = '15,1888px';
-let fontSizeOnlyNumbers;
+// let weight = '190,9';
+// let height = "1.5";
+
+// if (weight.includes(',')) {
+//     weight = weight.replace(',','.');
+// }
+// if (height.includes(',')) {
+//   height = height.replace(',', '.');
+// }
+
+
+// const bmi = parseFloat(weight) / Math.pow(parseFloat(height), 2);
+// // const bmi = parseFloat(weight) / (parseFloat(height**2));
+
+// console.log(
+// `weight:${weight} 
+// height:${height}`);
+// console.log(`${bmi.toFixed(1)}`)
+
+
 
 // // check spam
 // function checkForSpam(message) {
@@ -11,6 +29,8 @@ let fontSizeOnlyNumbers;
 // }
 // let maill = checkForSpam("feev  SAle");
 // console.log(maill)
+
+
 
 // // check for null and undefined 
 // const incomingValue = undefined;// null; 
