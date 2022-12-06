@@ -39,4 +39,15 @@
 // console.log(value);// 404 , if incomingValue = all others; value = all others 
 
 
+const totalMinute = 1440;// 24 hours
+let hours =( totalMinute / 60).toFixed(0);
+let minute = totalMinute % 60;
+if (minute < 10) {
+  minute= `0${minute}`  
+}
+if (hours < 10) {
+ hours= `0${hours}`;
+}
+const clock = `${hours}:${minute}`;
 
+console.log(clock);
