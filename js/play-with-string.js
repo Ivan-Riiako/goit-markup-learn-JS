@@ -91,7 +91,7 @@
 // }
 
 // easy dedline
-  
+
 //  VAR 1
 // const days = -300;
 // let message;
@@ -125,11 +125,35 @@
 // }
 // console.log(message);
 
-// counter  \easy
-const minNumber = 30;
-const maxNumber = 300;
-for (let i = minNumber; i <= maxNumber; i += 1){
-    if (i % 5 === 0) {
-  console.log(i);
-    }
+// // counter  \easy
+// const minNumber = 30;
+// const maxNumber = 300;
+// for (let i = minNumber; i <= maxNumber; i += 1){
+//     if (i % 5 === 0) {
+//   console.log(i);
+//     }
+// }
+
+// autorization n
+const USER_LIGIN = 'Jon';
+const USER_PASSWORD = 'Dou';
+let imputLogin = prompt('Enter your login');
+let imputPassword;
+
+if ((imputLogin === USER_LIGIN)) {
+    imputPassword = prompt('Enter your password');
+  if (imputPassword === USER_PASSWORD) {
+    alert('Wellcome administrator');
+    console.log('Wellcome Admin');
+  } else if (imputPassword === null || imputPassword === undefined) {
+    console.log('Cancel');
+  } else {
+    alert('Wrong password');
+    console.log('Wrong password');
+  }
+} else if (imputLogin === null || imputLogin === undefined) {
+    console.log('Cancel');
+} else  {
+  alert('Wrong login');
+  console.log('Wrong login');
 }
