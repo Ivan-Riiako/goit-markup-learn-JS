@@ -87,12 +87,30 @@
 //    console.log(`Site is't GIT HAB`);
 // }
 
-// clock adiction
-const hours = 10;
-if (hours < 17) {
-    console.log('Pending')
-} else if (hours >= 17 && hours <= 24) {
-    console.log('Expires');
-} else {
-    console.log('Owerdue')
-}
+// clock adiction \easy
+// const hours = 10;
+// if (hours < 17) {
+//     console.log('Pending');
+// } else if (hours >= 17 && hours <= 24) {
+//     console.log('Expires');
+// } else {
+//     console.log('Owerdue');
+// }
+
+
+// // easy dedline
+// const days = 1;
+// let message;
+// if (days === 0) {
+// message='ToDay';
+// } else if (days === 1) {
+//   message = 'Tomorrow';
+// } else if (days === 2) {
+//   message = 'day after tomorrow';
+// } else if (days > 2) {
+//   message = `Future date`;
+// }
+// console.log(message);
+
+
+
