@@ -137,21 +137,21 @@
 // autorization n
 const USER_LIGIN = 'Jon';
 const USER_PASSWORD = 'Dou';
-let imputLogin = prompt('Enter your login');
+let imputLogin = prompt('Enter your login').trim();
 let imputPassword;
 
 if ((imputLogin === USER_LIGIN)) {
-    imputPassword = prompt('Enter your password');
+    imputPassword = prompt('Enter your password').trim();
   if (imputPassword === USER_PASSWORD) {
     alert('Wellcome administrator');
     console.log('Wellcome Admin');
-  } else if (imputPassword === null || imputPassword === undefined) {
+  } else if (imputPassword === null || imputPassword === '') {
     console.log('Cancel');
   } else {
     alert('Wrong password');
     console.log('Wrong password');
   }
-} else if (imputLogin === null || imputLogin === undefined) {
+} else if (imputLogin === null || imputLogin === '') {
     console.log('Cancel');
 } else  {
   alert('Wrong login');
