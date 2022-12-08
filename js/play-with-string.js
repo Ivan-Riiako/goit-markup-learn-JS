@@ -1,4 +1,3 @@
-
 // let weight = '190,9';
 // let height = "1.5";
 
@@ -9,7 +8,6 @@
 //   height = height.replace(',', '.');
 // }
 
-
 // const bmi = parseFloat(weight) / Math.pow(parseFloat(height), 2);
 // // const bmi = parseFloat(weight) / (parseFloat(height**2));
 
@@ -17,8 +15,6 @@
 // `weight:${weight}
 // height:${height}`);
 // console.log(`${bmi.toFixed(1)}`)
-
-
 
 // // check spam
 // function checkForSpam(message) {
@@ -29,8 +25,6 @@
 // }
 // let maill = checkForSpam("feev  SAle");
 // console.log(maill)
-
-
 
 // // check for null and undefined
 // const incomingValue = undefined;// null;
@@ -62,7 +56,6 @@
 // } else {
 //    console.log(link);
 // }
-
 
 // loop for loop
 // let link = 'https://ivan-riiako.github.io/goit-markup-learn-JS';
@@ -97,7 +90,6 @@
 //     console.log('Owerdue');
 // }
 
-
 // easy dedline
 const days = -300;
 let message;
@@ -107,12 +99,9 @@ if (Number.parseInt(days) === 0) {
   message = 'Tomorrow';
 } else if (Number.parseInt(days) === 2) {
   message = 'day after tomorrow';
-} else if ( Number.parseInt(days)> 2) {
+} else if (Number.parseInt(days) >= 3) {
   message = `Future date`;
 } else {
-    message = 'dedline will be back';
+  message = 'dedline will be back';
 }
 console.log(message);
-
-
-
