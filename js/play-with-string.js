@@ -92,7 +92,7 @@
 
 // easy dedline
   
-//  VAR 1 
+//  VAR 1
 // const days = -300;
 // let message;
 // if (Number.parseInt(days) === 0) {
@@ -109,18 +109,27 @@
 // console.log(message);
 
 // VAR 2
-const days = 300;
-let message;
-switch (Number.parseInt(days)) {
-    case 0:
-        message = 'ToDay';
-        break;
-    case 1:
-        message = 'Tomorrow';
-        break;
-    case 2:
-        message = 'day after tomorrow';
-        break;
-    default: message = 'dedline will be back';
+// const days = 300;
+// let message;
+// switch (Number.parseInt(days)) {
+//     case 0:
+//         message = 'ToDay';
+//         break;
+//     case 1:
+//         message = 'Tomorrow';
+//         break;
+//     case 2:
+//         message = 'day after tomorrow';
+//         break;
+//     default: message = 'dedline will be back';
+// }
+// console.log(message);
+
+// counter  \easy
+const minNumber = 30;
+const maxNumber = 300;
+for (let i = minNumber; i <= maxNumber; i += 1){
+    if (i % 5 === 0) {
+  console.log(i);
+    }
 }
-console.log(message);
