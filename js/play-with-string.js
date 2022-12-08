@@ -63,3 +63,16 @@
 //    console.log(link);
 // }
 
+
+// loop for loop
+let link = 'https://ivan-riiako.github.io/goit-markup-learn-JS';
+link = 'https://ivan-riiako.githu.io/goit-markup-learn-JS';
+if (link.includes('github')) {
+    if (!link.endsWith('/')) {   
+   console.log(link + '/');
+} else {
+   console.log(link);
+}
+} else {
+   console.log(`Site is't GIT HAB`);
+}
