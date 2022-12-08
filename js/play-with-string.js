@@ -98,19 +98,21 @@
 // }
 
 
-// // easy dedline
-// const days = 1;
-// let message;
-// if (days === 0) {
-// message='ToDay';
-// } else if (days === 1) {
-//   message = 'Tomorrow';
-// } else if (days === 2) {
-//   message = 'day after tomorrow';
-// } else if (days > 2) {
-//   message = `Future date`;
-// }
-// console.log(message);
+// easy dedline
+const days = -300;
+let message;
+if (Number.parseInt(days) === 0) {
+  message = 'ToDay';
+} else if (Number.parseInt(days) === 1) {
+  message = 'Tomorrow';
+} else if (Number.parseInt(days) === 2) {
+  message = 'day after tomorrow';
+} else if ( Number.parseInt(days)> 2) {
+  message = `Future date`;
+} else {
+    message = 'dedline will be back';
+}
+console.log(message);
 
 
 
