@@ -65,24 +65,34 @@
 
 
 // loop for loop
-let link = 'https://ivan-riiako.github.io/goit-markup-learn-JS';
-// link = 'https://google.com';
+// let link = 'https://ivan-riiako.github.io/goit-markup-learn-JS';
+// // link = 'https://google.com';
 
-// var 1
-if (link.includes('github')) {
-    if (!link.endsWith('/')) {   
-   console.log(link + '/');
+// // var 1
+// if (link.includes('github')) {
+//     if (!link.endsWith('/')) {
+//    console.log(link + '/');
+// } else {
+//    console.log(link);
+// }
+// } else {
+//    console.log(`Site is't GIT HAB`);
+// }
+// // var 2
+// if (link.includes('github') && !link.endsWith('/')) {
+//    console.log(link + '/');
+// } else if (link.includes('github') && link.endsWith('/')) {
+//   console.log(link + '/');
+// } else {
+//    console.log(`Site is't GIT HAB`);
+// }
+
+// clock adiction
+const hours = 10;
+if (hours < 17) {
+    console.log('Pending')
+} else if (hours >= 17 && hours <= 24) {
+    console.log('Expires');
 } else {
-   console.log(link);
-}
-} else {
-   console.log(`Site is't GIT HAB`);
-}
-// var 2
-if (link.includes('github') && !link.endsWith('/')) {
-   console.log(link + '/');
-} else if (link.includes('github') && link.endsWith('/')) {
-  console.log(link + '/');
-} else {
-   console.log(`Site is't GIT HAB`);
+    console.log('Owerdue')
 }
