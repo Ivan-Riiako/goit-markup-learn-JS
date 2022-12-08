@@ -52,14 +52,14 @@
 
 // console.log(clock);
 
+// // inverse
+// // add "/"
+// // endsWith
+// let link = "https://ivan-riiako.github.io/goit-markup-learn-JS";
 
-// add "/"
-let link = "https://ivan-riiako.github.io/goit-markup-learn-JS";
+// if (!link.endsWith('/')) {     //  ! save time
+//    console.log(link + '/');
+// } else {
+//    console.log(link);
+// }
 
-if (!link.endsWith('/')) {     //  ! save time
-   console.log(link + '/');
-    
-} else {
-   console.log(link);
-    
-}
