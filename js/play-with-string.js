@@ -66,7 +66,9 @@
 
 // loop for loop
 let link = 'https://ivan-riiako.github.io/goit-markup-learn-JS';
-link = 'https://ivan-riiako.githu.io/goit-markup-learn-JS';
+// link = 'https://google.com';
+
+// var 1
 if (link.includes('github')) {
     if (!link.endsWith('/')) {   
    console.log(link + '/');
@@ -76,3 +78,7 @@ if (link.includes('github')) {
 } else {
    console.log(`Site is't GIT HAB`);
 }
+// var 2
+if (link.includes('github') && !link.endsWith('/')) {
+   console.log(link + '/');
+};
