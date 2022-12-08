@@ -81,4 +81,8 @@ if (link.includes('github')) {
 // var 2
 if (link.includes('github') && !link.endsWith('/')) {
    console.log(link + '/');
-};
+} else if (link.includes('github') && link.endsWith('/')) {
+  console.log(link + '/');
+} else {
+   console.log(`Site is't GIT HAB`);
+}
