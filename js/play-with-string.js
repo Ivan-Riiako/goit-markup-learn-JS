@@ -174,14 +174,14 @@
 //   : `No, first letter isn't 'a'`;
 // console.log(checkFirstLetter);
 
-// Find to last lettter
-const string = 'Если скачать музыку то можно увеличить или нельзя!';
-let messageAnsver;
-if (string.endsWith('!')) {
-    messageAnsver = `It's true`;
-} else if (string.endsWith('?')) {
-    messageAnsver = `It's answear`;
-} else{
-    messageAnsver = `It's reasoning`;
-}
-console.log(messageAnsver);
+// // Find to last lettter
+// const string = 'Если скачать музыку то можно увеличить или нельзя!';
+// let messageAnsver;
+// if (string.endsWith('!')) {
+//     messageAnsver = `It's true`;
+// } else if (string.endsWith('?')) {
+//     messageAnsver = `It's answear`;
+// } else{
+//     messageAnsver = `It's reasoning`;
+// }
+// console.log(messageAnsver);
