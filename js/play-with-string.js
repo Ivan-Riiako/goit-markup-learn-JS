@@ -158,18 +158,30 @@
 //   console.log('Wrong login');
 // }
 
-// Dead space without and find to first letter
-const name = '  Adel Rozenbaum';
-console.log(name);
-// trim() --- убрать пробелы по краям
-let normalaizeName = name.toLowerCase().trim();
-console.log(normalaizeName);
-// VAR 1
-// const checkFirstLetter = normalaizeName[0] === 'a' ? true : false;
+// // Dead space without and find to first letter
+// const name = '  Adel Rozenbaum';
+// console.log(name);
+// // trim() --- убрать пробелы по краям
+// let normalaizeName = name.toLowerCase().trim();
+// console.log(normalaizeName);
+// // VAR 1
+// // const checkFirstLetter = normalaizeName[0] === 'a' ? true : false;
+// // console.log(checkFirstLetter);
+
+// // VAR 2
+// const checkFirstLetter = normalaizeName.startsWith('a')
+//   ? `Yes,first letter is 'a'`
+//   : `No, first letter isn't 'a'`;
 // console.log(checkFirstLetter);
 
-// VAR 2
-const checkFirstLetter = normalaizeName.startsWith('a')
-  ? `Yes,first letter is 'a'`
-  : `No, first letter isn't 'a'`;
-console.log(checkFirstLetter);
+// Find to last lettter
+const string = 'Если скачать музыку то можно увеличить или нельзя!';
+let messageAnsver;
+if (string.endsWith('!')) {
+    messageAnsver = `It's true`;
+} else if (string.endsWith('?')) {
+    messageAnsver = `It's answear`;
+} else{
+    messageAnsver = `It's reasoning`;
+}
+console.log(messageAnsver);
