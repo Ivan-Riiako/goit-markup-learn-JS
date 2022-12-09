@@ -185,3 +185,4 @@
 //     messageAnsver = `It's reasoning`;
 // }
 // console.log(messageAnsver);
+console.log(0/0)
