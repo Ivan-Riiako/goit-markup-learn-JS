@@ -185,4 +185,27 @@
 //     messageAnsver = `It's reasoning`;
 // }
 // console.log(messageAnsver);
-console.log(0/0)
+
+
+// // Area of a Rectangle
+// const sideA = 4;
+// const diagonal = 7;
+// let sideB;
+// let areaRectangle;
+// let result;
+// if (diagonal < sideA) {
+//     result= "not a rectangle"
+// } else {
+//     sideB = Math.sqrt(diagonal ** 2 - sideA ** 2).toFixed(2);
+//     console.log(sideB);\
+//     areaRectangle = sideA * sideB;
+//     result = `Area of a rectangle:${areaRectangle} mm`;
+// }
+// console.log(result);
+
+
+// DAY OF WEEK
+const dayNumber = new Date.getDate();
+comsole.log(dayNumber);
+let day;
+case
