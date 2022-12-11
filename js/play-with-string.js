@@ -204,33 +204,33 @@
 // console.log(result);
 
 
-// DAY OF WEEK
-const dayNumber = new Date().getDay();
-console.log(new Date().getDate());
-console.log(dayNumber);
+// // DAY OF WEEK
+// const dayNumber = new Date().getDay();
+// console.log(new Date().getDate());
+// console.log(dayNumber);
 
-let day;
-switch (dayNumber) {
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Wednesday';
-    break;
-  case 4:
-    day = 'Thursday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
-    day = 'Suturday';
-    break;
-  case 0:
-    day = 'Sunday';
-    break;
-}
-console.log(`today is ${day} `);
+// let day;
+// switch (dayNumber) {
+//   case 1:
+//     day = 'Monday';
+//     break;
+//   case 2:
+//     day = 'Tuesday';
+//     break;
+//   case 3:
+//     day = 'Wednesday';
+//     break;
+//   case 4:
+//     day = 'Thursday';
+//     break;
+//   case 5:
+//     day = 'Friday';
+//     break;
+//   case 6:
+//     day = 'Suturday';
+//     break;
+//   case 0:
+//     day = 'Sunday';
+//     break;
+// }
+// console.log(`today is ${day} `);
