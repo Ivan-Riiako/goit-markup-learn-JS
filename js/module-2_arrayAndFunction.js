@@ -18,8 +18,8 @@
 //     console.log(client);
 // }
 
-const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
-let totalCart = 0;
+// const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
+// let totalCart = 0;
 
 // // var 1
 // for (let i = 0; i < cart.length; i += 1){
@@ -27,13 +27,19 @@ let totalCart = 0;
 // }
 
 // var 2
-for (const value of cart) {
-    totalCart += value;
-}
-console.log(`Total: ${totalCart}`);
+// for (const value of cart) {
+//     totalCart += value;
+// }
+// console.log(`Total: ${totalCart}`);
 
-for (let i = 0; i <= cart.length; i += 1) {
-    cart[i] *= 1.1;
+
+const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
+let totalCart = 0;
+for (let i = 0; i < cart.length; i += 1) {
+    // cart[i] *= 1.1;
+    // cart[i] = cart[i].toFixed(2);
+
+    cart[i] = Math.round(cart[i] ** 1.1);
    
 console.log(cart[i]);
 
