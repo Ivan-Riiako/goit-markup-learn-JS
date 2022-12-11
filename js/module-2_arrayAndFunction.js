@@ -40,8 +40,6 @@ for (let i = 0; i < cart.length; i += 1) {
     // cart[i] = cart[i].toFixed(2);
 
     cart[i] = Math.round(cart[i] ** 1.1);
-   
-console.log(cart[i]);
-
+    console.log(cart[i]);
 }
 console.log(cart);
