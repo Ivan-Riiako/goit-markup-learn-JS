@@ -233,4 +233,4 @@ switch (dayNumber) {
     day = 'Sunday';
     break;
 }
-console.log(day);
+console.log(`today is ${day} `);
