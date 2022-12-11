@@ -205,7 +205,30 @@
 
 
 // DAY OF WEEK
-const dayNumber = new Date.getDate();
+const dayNumber =new Date().getDate();
 comsole.log(dayNumber);
 let day;
-case
+switch (dayNumber) {
+  case 1:
+    day = 'Monday';
+    breack;
+  case 2:
+    day = 'Tuesday';
+    breack;
+  case 3:
+    day = 'Wednesday';
+    breack;
+  case 4:
+    day = 'Thursday';
+    breack;
+  case 5:
+    day = 'Friday';
+    breack;
+  case 6:
+    day = 'Suturday';
+    breack;
+  case 7:
+    day = 'Sunday';
+    breack;
+}
+console.log(day);
