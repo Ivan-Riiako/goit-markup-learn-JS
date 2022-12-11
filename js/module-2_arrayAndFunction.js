@@ -33,13 +33,14 @@
 // console.log(`Total: ${totalCart}`);
 
 
-const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
-let totalCart = 0;
-for (let i = 0; i < cart.length; i += 1) {
-    // cart[i] *= 1.1;
-    // cart[i] = cart[i].toFixed(2);
-
-    cart[i] = Math.round(cart[i] ** 1.1);
-    console.log(cart[i]);
-}
-console.log(cart);
+// const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
+// let totalCart = 0;
+// for (let i = 0; i < cart.length; i += 1) {
+// // var 1
+// cart[i] *= 1.1;
+// cart[i] = cart[i].toFixed(2);
+// var 2
+//     cart[i] = Math.round(cart[i] ** 1.1);
+//     console.log(cart[i]);
+// }
+// console.log(cart);
