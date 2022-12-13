@@ -116,7 +116,7 @@
 // console.log(`Bigest number: ${bigestNumber}`);
 
 // arr in string   join
-const stringArr = ['Polly', 'have', 'a', 'big', 'shot'];
+// const stringArr = ['Polly', 'have', 'a', 'big', 'shot'];
   // var 1
 // let string = ''
 // for (let i = 0; i < stringArr.length; i += 1){
@@ -125,13 +125,33 @@ const stringArr = ['Polly', 'have', 'a', 'big', 'shot'];
 // string = string.slice(0, string.length - 1);
 
   // var 2
-let string = stringArr.join(',');
+// let string = stringArr.join(',');
 
-console.log(string);
+// console.log(string);
 
-// srting in arr   split
-const stringJs = 'JavaScript';
+// // srting in arr   split
+// const stringJs = 'JavaScript';
+// console.log(stringJs);
+// const letters = stringJs.split('');
+// console.log(letters);
 
+// let inverseStringJs = '';
+
+// for (const letter of letters) {
+// //   // var 1
+// //   if (letter === letter.toUpperCase()) {
+// //     inverseStringJs += letter.toLowerCase();
+// //   } else {
+// //     inverseStringJs += letter.toUpperCase();
+// //   }
+//   // var 2
+//     const isEqual = letter === letter.toUpperCase();
+//     inverseStringJs += isEqual ? letter.toLowerCase() : letter.toUpperCase();
+//         // console.log(letter);
+//         // console.log(inverseStringJs);
+// }
+
+//     console.log(`Invwerse JavaScript - ${inverseStringJs}`);
 
 
 
