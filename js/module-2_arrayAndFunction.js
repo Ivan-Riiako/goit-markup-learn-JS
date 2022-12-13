@@ -195,4 +195,17 @@ console.log(`index of ${cardToRemove} is ${index}`);
 cards.splice(index, 1)
 console.table(cards);
 
+// add card
+const cardToInsert = 'I will vdul';
+const toInsertIndex = 3;
+cards.splice(toInsertIndex, 0, cardToInsert);
+console.table(cards);
+
+
+// del and add
+const cardToUppdate = 'card -100';
+
+cards.splice(3, 1, cardToUppdate);
+console.table(cards);
+
 
