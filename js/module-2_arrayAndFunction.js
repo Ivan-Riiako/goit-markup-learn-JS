@@ -32,7 +32,6 @@
 // }
 // console.log(`Total: ${totalCart}`);
 
-
 // const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
 // let totalCart = 0;
 // for (let i = 0; i < cart.length; i += 1) {
@@ -45,7 +44,6 @@
 // }
 // console.log(cart);
 
-
 // const number = [1, 2, 3, 5, 67, 98, 3, 98, 44, 55];
 // let total = 0;
 // for (const value of number) {
@@ -54,7 +52,7 @@
 //   //     console.log(` even number: ${value}`);
 //   //     total += value;
 //   //   }
-    
+
 //   // var2
 //     if (value % 2 !== 0) {
 //         continue
@@ -73,7 +71,7 @@
 // // for (const login of logins) {
 // //     console.log(`Login: ${login}`)
 // //     console.log(`login === findLogin :  ${login === findLogin}`);
-    
+
 // // // VAR 1.1
 // //     if (login === findLogin) {
 // //         message = `Login ${login} is find`;
@@ -117,14 +115,14 @@
 
 // arr in string   join
 // const stringArr = ['Polly', 'have', 'a', 'big', 'shot'];
-  // var 1
+// var 1
 // let string = ''
 // for (let i = 0; i < stringArr.length; i += 1){
 //     string += stringArr[i] + ',';
 // }
 // string = string.slice(0, string.length - 1);
 
-  // var 2
+// var 2
 // let string = stringArr.join(',');
 
 // console.log(string);
@@ -184,8 +182,17 @@
 // }
 //     console.log(`all  of array sum:${total}`);
 
+// Delete-card with splice
+const cards = ['card-1', 'card-2', 'card-3', 'card-4', 'card-5'];
+console.table(cards);
 
+const cardToRemove = "card-5";
+console.table(`Delet: ${cardToRemove}`);
 
+const index = cards.indexOf(cardToRemove);
+console.log(`index of ${cardToRemove} is ${index}`);
 
+cards.splice(index, 1)
+console.table(cards);
 
 
