@@ -153,6 +153,39 @@
 
 //     console.log(`Invwerse JavaScript - ${inverseStringJs}`);
 
+// use abstraction
+// const string = 'my notebook with WI-FI 2     ';
+// console.log(string);
+
+// // VAR 1
+// let normalaizeString = string.toLowerCase().trim();
+// console.log(normalaizeString);
+// let stringArr = normalaizeString.split(' ');
+// console.log(stringArr);
+// let newString = stringArr.join('-');
+// console.log(newString);
+// // VAR 2
+// let trueString = string.toLowerCase().trim().split(' ').join('-');
+// console.log(trueString)
+
+// // add arr , Concat
+// const array1 = [13, 56, 78, 90, 1];
+// const array2 = [12, 43, 76, 32];
+// let total = 0;
+
+// console.log(array1 + array2);      // 13, 56, 78, 90, 112, 43, 76, 32;
+// console.log(`${array1},${array2}`);// 13, 56, 78, 90, 1, 12, 43, 76, 32;
+
+// const addArray = array1.concat(array2);
+// console.log(addArray);            // [13, 56, 78, 90, 1, 12, 43, 76, 32];
+
+// for (const arr of addArray) {
+//     total += arr;
+// }
+//     console.log(`all  of array sum:${total}`);
+
+
+
 
 
 
