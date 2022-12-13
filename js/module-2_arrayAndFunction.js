@@ -72,12 +72,12 @@
 // //     console.log(`Login: ${login}`)
 // //     console.log(`login === findLogin :  ${login === findLogin}`);
 
-// // // VAR 1.1
+// // // VAR 1-1
 // //     if (login === findLogin) {
 // //         message = `Login ${login} is find`;
 // //         break;
 // //     }
-// // // // VAR 2.1
+// // // // VAR 2-1
 // // //     if (login !== findLogin) {
 // // //        continue
 // // //     }
@@ -182,30 +182,57 @@
 // }
 //     console.log(`all  of array sum:${total}`);
 
-// Delete-card with splice
-const cards = ['card-1', 'card-2', 'card-3', 'card-4', 'card-5'];
-console.table(cards);
+// // Delete-card with splice
+// const cards = ['card-1', 'card-2', 'card-3', 'card-4', 'card-5'];
+// console.table(cards);
 
-const cardToRemove = "card-5";
-console.table(`Delet: ${cardToRemove}`);
+// const cardToRemove = "card-5";
+// console.table(`Delet: ${cardToRemove}`);
 
-const index = cards.indexOf(cardToRemove);
-console.log(`index of ${cardToRemove} is ${index}`);
+// const index = cards.indexOf(cardToRemove);
+// console.log(`index of ${cardToRemove} is ${index}`);
 
-cards.splice(index, 1)
-console.table(cards);
+// cards.splice(index, 1)
+// console.table(cards);
 
-// add card
-const cardToInsert = 'I will vdul';
-const toInsertIndex = 3;
-cards.splice(toInsertIndex, 0, cardToInsert);
-console.table(cards);
-
-
-// del and add
-const cardToUppdate = 'card -100';
-
-cards.splice(3, 1, cardToUppdate);
-console.table(cards);
+// // add card
+// const cardToInsert = 'I will vdul';
+// const toInsertIndex = 3;
+// cards.splice(toInsertIndex, 0, cardToInsert);
+// console.table(cards);
 
 
+// // del and add
+// const cardToUppdate = 'card -100';
+
+// cards.splice(3, 1, cardToUppdate);
+// console.table(cards);
+
+
+// const value = '8 11';
+// const numbers = value.split(' ');
+// console.log(numbers);
+// const a = Number(numbers[0]);
+// const b = Number(numbers[1]);
+// let result = a * b;
+// console.log(result);
+
+// const names = 'Alex,Bob,Nadia,Vica,Chisgishan,name548,q1q1qq1';
+// const phones = '2534545454343,1433,tell,1545,9873,5634,5654-53633';
+// const namesArr = names.split(',');
+// const phonesArr = phones.split(',');
+// // console.table(namesArr);
+// // console.table(phonesArr);
+// for (let i = 0; i < phonesArr.length; i += 1) {
+//   const name = namesArr[i];
+//   const phone = phonesArr[i];
+//   console.log(`${name}: ${phone}`);
+// }
+
+// const string = ' 324324234 a b c 111 d e y 5465346 '
+// const arrString = string.trim().split(' ');
+// console.log(arrString);
+// arrString.shift();
+// arrString.pop();
+// const normalaizeString = arrString.join(' ');
+// console.log(normalaizeString);
