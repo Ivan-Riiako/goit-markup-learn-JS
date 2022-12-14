@@ -93,8 +93,11 @@
 // console.log(message);
 
 // // find min-max number
-// const numbers = [16, 24, 32, 5, 67, 98, 3447, 98, 44, 55, 44, 33, 22, 73,13,'1'+1];
-
+// const numbers = [16, 24, 32, -5, 67, 96, 37, 98, 44, 55, 44, 33, 22, 73, 13, '1' + 1];
+// // // VAR 1
+// // console.log(Math.min(...numbers));
+// // console.log(Math.max(...numbers));
+// // VAR 2
 // let smallestNumber = numbers[0];
 // let bigestNumber = numbers[0];
 
@@ -109,7 +112,6 @@
 //     bigestNumber = value;
 //   }
 // }
-
 // console.log(`Smallest number: ${smallestNumber}`);
 // console.log(`Bigest number: ${bigestNumber}`);
 
@@ -237,14 +239,21 @@
 // const normalaizeString = arrString.join(' ');
 // console.log(normalaizeString);
 
+// // revers
+// const string = ' 1 2 3 4 5 6 7 8 9 ';
+// console.log(string);
+// // // VAR 1
+// // const stringArr = string.trim().split(' ');
+// // console.log(stringArr);
+// // let inverseString = '';
+// // for (let i = stringArr.length - 1; i >= 0; i -= 1){
+// //     inverseString += stringArr[i];
+// // }
+// // inverseString = inverseString.split('').join(' ');
 
-const string = ' 1 2 3 4 5 6 7 8 9 ';
-console.log(string);
-const stringArr = string.trim().split(' ');
-console.log(stringArr);
-let inverseString = '';
-for (let i = stringArr.length - 1; i >= 0; i -= 1){
-    inverseString += stringArr[i];
-}
-inverseString = inverseString.split('').join(' ');
-console.log(inverseString);
+// // VAR 2
+// // const inverseString = stringArr.reverse().join(' ');
+// const inverseString = string.split(' ').reverse().join(' ');
+// console.log(inverseString);
+
+
