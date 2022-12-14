@@ -236,3 +236,15 @@
 // arrString.pop();
 // const normalaizeString = arrString.join(' ');
 // console.log(normalaizeString);
+
+
+const string = ' 1 2 3 4 5 6 7 8 9 ';
+console.log(string);
+const stringArr = string.trim().split(' ');
+console.log(stringArr);
+let inverseString = '';
+for (let i = stringArr.length - 1; i >= 0; i -= 1){
+    inverseString += stringArr[i];
+}
+inverseString = inverseString.split('').join(' ');
+console.log(inverseString);
