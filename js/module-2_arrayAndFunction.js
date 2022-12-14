@@ -256,21 +256,21 @@
 
 
 
-// add value in page
-let input ;
-let total = 0;
+// // add value in page
+// let input ;
+// let total = 0;
 
-    while(true){
-        input = prompt('add number', 0);
+//     while(true){
+//         input = prompt('add number', 0);
         
-    if (isNaN(Number(input))) {
-    alert('Not namber. Try again');
-    continue;
-        }
-    if (input === null) {
-    break;
-        }
-    total += Number(input);
-    console.log(total);
-}
-alert(`Total Sum : ${total}`);
+//     if (isNaN(Number(input))) {
+//     alert('Not namber. Try again');
+//     continue;
+//         }
+//     if (input === null) {
+//     break;
+//         }
+//     total += Number(input);
+//     console.log(total);
+// }
+// alert(`Total Sum : ${total}`);
