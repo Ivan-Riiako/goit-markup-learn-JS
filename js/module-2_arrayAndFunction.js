@@ -263,12 +263,11 @@ let total = 0;
 // for (let i = 1; i > 0; i += 1) {
     while(true){
   if (value === null) {
-    alert(`Total Sum : ${total}`);
     break;
   }
   else {
       
-      value = prompt('add number');
+      value = prompt('add number',0);
       if (Number(value) == value || Number(value)===0) {
         total += Number(value);
       }
@@ -280,4 +279,5 @@ let total = 0;
   }
 }
 
+    alert(`Total Sum : ${total}`);
 
