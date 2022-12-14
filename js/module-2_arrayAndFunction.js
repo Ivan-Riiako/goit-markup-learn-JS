@@ -18,9 +18,6 @@
 //     console.log(client);
 // }
 
-
-
-
 // const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
 // let totalCart = 0;
 
@@ -35,9 +32,6 @@
 // }
 // console.log(`Total: ${totalCart}`);
 
-
-
-
 // const cart = [32, 23, 46, 46, 46, 57, 65, 67, 87, 91, 21, 46, 17, 120];
 // let totalCart = 0;
 // for (let i = 0; i < cart.length; i += 1) {
@@ -49,10 +43,6 @@
 //     console.log(cart[i]);
 // }
 // console.log(cart);
-
-
-
-
 
 // const number = [1, 2, 3, 5, 67, 98, 3, 98, 44, 55];
 // let total = 0;
@@ -71,9 +61,6 @@
 // }
 
 // console.log(`Sum of even numbers: ${total}`)
-
-
-
 
 // // find Login
 // const logins = ['fsdfdsf', 'fsfesfesf', 'apple', 'wood', 'freen'];
@@ -105,11 +92,6 @@
 //   : `Login is not find`;
 // console.log(message);
 
-
-
-
-
-
 // // find min-max number
 // const numbers = [16, 24, 32, -5, 67, 96, 37, 98, 44, 55, 44, 33, 22, 73, 13, '1' + 1];
 // // // VAR 1
@@ -133,9 +115,6 @@
 // console.log(`Smallest number: ${smallestNumber}`);
 // console.log(`Bigest number: ${bigestNumber}`);
 
-
-
-
 // arr in string   join
 // const stringArr = ['Polly', 'have', 'a', 'big', 'shot'];
 // var 1
@@ -149,9 +128,6 @@
 // let string = stringArr.join(',');
 
 // console.log(string);
-
-
-
 
 // // srting in arr   split
 // const stringJs = 'JavaScript';
@@ -177,9 +153,6 @@
 
 //     console.log(`Invwerse JavaScript - ${inverseStringJs}`);
 
-
-
-
 // use abstraction
 // const string = 'my notebook with WI-FI 2     ';
 // console.log(string);
@@ -194,9 +167,6 @@
 // // VAR 2
 // let trueString = string.toLowerCase().trim().split(' ').join('-');
 // console.log(trueString)
-
-
-
 
 // // add arr , Concat
 // const array1 = [13, 56, 78, 90, 1];
@@ -213,9 +183,6 @@
 //     total += arr;
 // }
 //     console.log(`all  of array sum:${total}`);
-
-
-
 
 // // Delete-card with splice
 // const cards = ['card-1', 'card-2', 'card-3', 'card-4', 'card-5'];
@@ -236,15 +203,11 @@
 // cards.splice(toInsertIndex, 0, cardToInsert);
 // console.table(cards);
 
-
 // // del and add
 // const cardToUppdate = 'card -100';
 
 // cards.splice(3, 1, cardToUppdate);
 // console.table(cards);
-
-
-
 
 // const value = '8 11';
 // const numbers = value.split(' ');
@@ -253,9 +216,6 @@
 // const b = Number(numbers[1]);
 // let result = a * b;
 // console.log(result);
-
-
-
 
 // const names = 'Alex,Bob,Nadia,Vica,Chisgishan,name548,q1q1qq1';
 // const phones = '2534545454343,1433,tell,1545,9873,5634,5654-53633';
@@ -269,9 +229,6 @@
 //   console.log(`${name}: ${phone}`);
 // }
 
-
-
-
 // const string = ' 324324234 a b c 111 d e y 5465346 '
 // const arrString = string.trim().split(' ');
 // console.log(arrString);
@@ -279,9 +236,6 @@
 // arrString.pop();
 // const normalaizeString = arrString.join(' ');
 // console.log(normalaizeString);
-
-
-
 
 // // revers
 // const string = ' 1 2 3 4 5 6 7 8 9 ';
@@ -300,5 +254,30 @@
 // const inverseString = string.split(' ').reverse().join(' ');
 // console.log(inverseString);
 
+
+
+// add value in page 
+let value ;
+let total = 0;
+
+// for (let i = 1; i > 0; i += 1) {
+    while(true){
+  if (value === null) {
+    alert(`Total Sum : ${total}`);
+    break;
+  }
+  else {
+      
+      value = prompt('add number');
+      if (Number(value) == value || Number(value)===0) {
+        total += Number(value);
+      }
+      else {
+    alert('Вы ввели не число');
+      }
+      console.log(total);
+      
+  }
+}
 
 
