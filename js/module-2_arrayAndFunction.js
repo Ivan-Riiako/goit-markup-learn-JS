@@ -256,28 +256,21 @@
 
 
 
-// add value in page 
-let value ;
+// add value in page
+let input ;
 let total = 0;
 
-// for (let i = 1; i > 0; i += 1) {
     while(true){
-  if (value === null) {
+        input = prompt('add number', 0);
+        
+    if (isNaN(Number(input))) {
+    alert('Not namber. Try again');
+    continue;
+        }
+    if (input === null) {
     break;
-  }
-  else {
-      
-      value = prompt('add number',0);
-      if (Number(value) == value || Number(value)===0) {
-        total += Number(value);
-      }
-      else {
-    alert('Вы ввели не число');
-      }
-      console.log(total);
-      
-  }
+        }
+    total += Number(input);
+    console.log(total);
 }
-
-    alert(`Total Sum : ${total}`);
-
+alert(`Total Sum : ${total}`);
