@@ -14,7 +14,10 @@ const Transaction = {
 
 const account = {
   balance: 0,
-  transactions: [],
+    transactions: [
+        { amount: 10000, type: 'deposit', id: 1672249694281 },
+        { amount: 1000, type: 'withdraw', id: 1672249694487 }
+    ],
 
   createTransaction(amount, type) {
     const transaction = {
@@ -44,13 +47,29 @@ const account = {
   
     getBalance() {
       alert(this.balance)
-  }
+    },
+    
+    getTransitionDetails(id) {
+        for (const transaction of this.transactions) {
+            if (id === transaction.id) {
+                console.log(transaction);
+                return transaction;
+                
+        }
+    }
+},
   
+    getTransactionTotal(type) {
+        const total= 
+    }
+
 };
 
 
 account.deposit(10000);
-// account.getBalance();
-account.withdraw(1000);
-// account.getBalance();
+// Flesh
+setTimeout(() => {
+account.withdraw(1000)
+},200)
 console.log(account);
+account.getTransitionDetails(1672249694281);
