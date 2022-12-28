@@ -60,7 +60,10 @@ const account = {
 },
   
     getTransactionTotal(type) {
-        const total= 
+        let total = 0;
+        for (const transaction of this.transactions) {
+            
+        }
     }
 
 };
