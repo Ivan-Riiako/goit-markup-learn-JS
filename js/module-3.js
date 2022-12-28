@@ -62,8 +62,11 @@ const account = {
     getTransactionTotal(type) {
         let total = 0;
         for (const transaction of this.transactions) {
-            
+            if (transaction.type === type) {
+                total += transaction.amount;
+            }
         }
+        return total;
     }
 
 };
@@ -76,3 +79,4 @@ account.withdraw(1000)
 },200)
 console.log(account);
 account.getTransitionDetails(1672249694281);
+console.log(account.getTransactionTotal(Transaction.WITHDRAW));
