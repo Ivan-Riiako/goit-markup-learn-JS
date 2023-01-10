@@ -84,77 +84,66 @@
 // console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 
-// const cart = {
-//   items: [],
+const cart = {
+  items: [],
 
-//   getItems() {
-//     return this.items;
-//   },
+  getItems() {
+    return this.items;
+  },
 
-//   add(product) {
-//     console.table(this.items)
-//     const { items } = this;
+  add(product) {
+    console.table(this.items)
+    const { items } = this;
 
-//     for (const item of items) {
-//       console.log(`this product is find`);
-//       if (item.name === product.name) {
+    for (const item of items) {
+      console.log(`this product is find`);
+      if (item.name === product.name) {
         
-//       }
-//     }
+      }
+    }
 
-//     const newProduct = {
-//       ...product,
-//       quantity: 1,
-//     };
-//     this.items.push(newProduct);
-//   },
+    const newProduct = {
+      ...product,
+      quantity: 1,
+    };
+    this.items.push(newProduct);
+  },
 
-//   remove(productName) {
-//     const { items } = this;
-//     for (let i = 0; i < items.length; i += 1) {
-//       const item = items[i];
-//       if (productName === item.name) {
-//         items.splice(i, 1);
-//       }
-//     }
-//   },
+  remove(productName) {
+    const { items } = this;
+    for (let i = 0; i < items.length; i += 1) {
+      const item = items[i];
+      if (productName === item.name) {
+        items.splice(i, 1);
+      }
+    }
+  },
 
-//   clear() {
-//     this.items = [];
-//   },
+  clear() {
+    this.items = [];
+  },
 
-//   countTotalPrice() {
-//     const { items } = this;
-//     let total = 0;
+  countTotalPrice() {
+    const { items } = this;
+    let total = 0;
 
-//     for (const { price } of items) {
-//       total += price;
-//     }
+    for (const { price } of items) {
+      total += price;
+    }
 
-//     return total;
-//   },
-// };
+    return total;
+  },
+};
 
-// cart.add({ name: 'tomato', price: 50 });
-// cart.add({ name: 'lemon', price: 60 });
-// cart.add({ name: 'strawberry', price: 160 });
-// cart.add({ name: 'anchouss', price: 70 });
-// cart.add({ name: 'tomato', price: 50 });
-// cart.add({ name: 'lemon', price: 60 });
-// cart.add({ name: 'strawberry', price: 160 });
-// cart.add({ name: 'anchouss', price: 70 });
+cart.add({ name: 'tomato', price: 50 });
+cart.add({ name: 'lemon', price: 60 });
+cart.add({ name: 'strawberry', price: 160 });
+cart.add({ name: 'anchouss', price: 70 });
+cart.add({ name: 'tomato', price: 50 });
+cart.add({ name: 'lemon', price: 60 });
+cart.add({ name: 'strawberry', price: 160 });
+cart.add({ name: 'anchouss', price: 70 });
 
-// cart.remove('lemon');
-// console.table(cart.getItems());
-// console.log(cart.countTotalPrice());
-function calculateTotal(number) {
-  // Change code below this line
-  let sumNumber = 0;
-  for ( i = 1; i <= number; i += 1) {
-    sumNumber += i;
-  }
-
-  return sumNumber;
-  // Change code above this line
-}
-console.log(calculateTotal( 3));
+cart.remove('lemon');
+console.table(cart.getItems());
+console.log(cart.countTotalPrice());
