@@ -58,11 +58,12 @@ const account = {
   balance: 3400,
   withdraw(amount, onSuccess, onError) {
     if (amount > this.balance) {
-      onError('a bit of $ on balance');
+      onError(`невозможно снять :${amount}, на балансе ${this.balance}`);
     } else if (amount > TRANSACTION_LIMIT) {
-      onError('a bit of $ on TRANSACTION_LIMIT');
+      onError(`Сумаа снятия: ${amount}, больше чем лимит транзакций- ${TRANSACTION_LIMIT}`);
     } else {
-      onSuccess('Operation Success');
+        this.balance -= amount;
+        onSuccess(`Операция успешна.Сняли: ${ amount }. Осталось: ${this.balance}`);
     }
   },
   deposit(amount, onSuccess, onError) {
@@ -83,5 +84,8 @@ function hendleError(message) {
 
 
 account.withdraw(300, hendleSuccess, hendleError);
-account.withdraw(500, hendleSuccess, hendleError);
-account.withdraw(1000, hendleSuccess, hendleError);
+account.withdraw(900, hendleSuccess, hendleError);
+account.withdraw(3000, hendleSuccess, hendleError);
+account.withdraw(1300, hendleSuccess, hendleError);
+account.withdraw(302, hendleSuccess, hendleError);
+account.withdraw(199, hendleSuccess, hendleError);
