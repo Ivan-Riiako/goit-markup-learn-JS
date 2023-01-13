@@ -58,7 +58,7 @@ const account = {
   balance: 3400,
   withdraw(amount, onSuccess, onError) {
     if (amount > this.balance) {
-      onError(`невозможно снять :${amount}, на балансе ${this.balance}`);
+      onError(`Невозможно снять :${amount}, на балансе ${this.balance}`);
     } else if (amount > TRANSACTION_LIMIT) {
       onError(`Сумаа снятия: ${amount}, больше чем лимит транзакций- ${TRANSACTION_LIMIT}`);
     } else {
